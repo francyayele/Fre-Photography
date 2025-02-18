@@ -4,7 +4,7 @@ import { ArrowRight, Camera, Users, Calendar, Menu, X, Heart, Users2, Building2 
 
 const sliderImages = [
   {
-    url: "Public/images/candy.jpg",
+    url: "Public/images/candy.png",
     title: "PHOTOGRAPHY STUDIO"
   },
   {
