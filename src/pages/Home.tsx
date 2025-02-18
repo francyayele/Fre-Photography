@@ -95,7 +95,7 @@ const Home = () => {
         <div className="w-full md:w-1/2 h-full flex flex-col items-center justify-center p-6 md:p-12">
           <div className="text-center max-w-xl">
             <motion.h3 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="text-xl md:text-2xl mb-4 text-gray-600">
-              Fre's Photography
+            Fre&apos;s Photography
             </motion.h3>
             <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="text-4xl md:text-6xl font-['Playfair_Display'] mb-6 tracking-wider text-gray-900">
               TIMELESS MEMORIES
@@ -189,7 +189,7 @@ const Home = () => {
               transition={{ delay: 0.3 }}
               className="text-lg text-gray-400 max-w-2xl mx-auto"
             >
-              Capturing life's precious moments with artistic vision and professional excellence
+              Capturing life&apos;s precious moments with artistic vision and professional excellence
             </motion.p>
           </div>
 
