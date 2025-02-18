@@ -107,7 +107,7 @@ const AboutPage = () => {
             className="relative h-[600px] overflow-hidden rounded-2xl"
           >
             <img
-              src="Public/images/Aboutus.png"
+              src="images/Aboutus.png"
               alt="Photographer portrait"
               className="w-full h-full object-cover"
             />
