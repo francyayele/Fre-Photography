@@ -49,7 +49,7 @@ const Photography = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div className="relative">
         <img
-          src="images/F1.jpeg" // Ensure correct image path
+          src="/images/F1.jpeg" // Ensure correct image path
           alt="Gallery 1"
           className="w-full h-[600px] object-cover rounded-lg"
         />
