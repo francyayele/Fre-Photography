@@ -7,7 +7,7 @@ export const portfolioCategories = [
   { title: 'Family', description: 'Capturing lifes precious moments', path: '/portfolio/family' },
   { title: 'Maternity', description: 'Beautiful beginnings', path: '/portfolio/maternity' },
   { title: 'Headshot', description: 'Professional portraits', path: '/portfolio/headshot' },
-  { title: 'Corporate', description: 'Business and events', path: '/portfolio/corporate' }
+  { title: 'Corporate', description: 'Business and events', path: '/portfolio/Corporate' }
 ];
 
 const Navbar = () => {

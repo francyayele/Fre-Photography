@@ -87,10 +87,10 @@ const AboutPage = () => {
               Meet the Photographer
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              I'm passionate about capturing life's most precious moments through the lens of my camera. With over a decade of experience in professional photography, I've developed a unique style that combines artistic vision with technical expertise.
+            I&apos;m passionate about capturing life&apos;s most precious moments through the lens of my camera. With over a decade of experience in professional photography, I&apos;ve developed a unique style that combines artistic vision with technical expertise.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              My approach focuses on creating authentic, emotionally resonant images that tell your story. Whether it's a wedding, family portrait, or corporate event, I work closely with clients to understand their vision and bring it to life through carefully crafted photography.
+              My approach focuses on creating authentic, emotionally resonant images that tell your story. Whether it&apos;s a wedding, family portrait, or corporate event, I work closely with clients to understand their vision and bring it to life through carefully crafted photography.
             </p>
             <motion.button 
               whileHover={{ scale: 1.05 }}
@@ -107,7 +107,7 @@ const AboutPage = () => {
             className="relative h-[600px] overflow-hidden rounded-2xl"
           >
             <img
-              src="Public/images/Aboutus.png"
+              src="Public/images/Aboutus.jpg"
               alt="Photographer portrait"
               className="w-full h-full object-cover"
             />

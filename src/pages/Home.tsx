@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Camera, Users, Calendar, Menu, X, Heart, Users2, Building2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const sliderImages = [
   {
@@ -106,16 +107,18 @@ const Home = () => {
               TIMELESS MEMORIES
             </motion.h1>
             <div className="flex justify-center">
-              <a href="/contact">
-                <motion.button 
-                  whileHover={{ scale: 1.05 }} 
-                  className="mt-8 bg-black text-white px-6 py-3 md:px-8 md:py-4 text-lg transition-all duration-300 hover:bg-gray-800 rounded-full flex items-center gap-2 group"
-                >
-                  Contact Us
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </motion.button>
-              </a>
-            </div>
+  <Link to="/contact" className="inline-flex mt-8 relative cursor-pointer group">
+    <div className="relative px-6 py-3 bg-black border border-white/30 hover:border-white/70 transition-all duration-300">
+      {/* Button content */}
+      <div className="relative flex items-center justify-center gap-3">
+        <span className="text-base text-white tracking-wide">
+        Book a Session
+        </span>
+        <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform duration-300" />
+      </div>
+    </div>
+  </Link>
+</div>
           </div>
         </div>
 
@@ -165,8 +168,7 @@ const Home = () => {
                   <div className="bg-white p-3 rounded-xl shadow-sm">{feature.icon}</div>
                   <div>
                     <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                    <p className="text-gray-600 mb-4">{feature.description}</p>
-                    <div className="text-sm font-semibold text-gray-900">{feature.stats}</div>
+                    <p className="text-gray-600">{feature.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -241,19 +243,19 @@ const Home = () => {
             ))}
           </div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="mt-16 text-center"
-          >
-            <button className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-white to-gray-400 px-8 py-4 text-black transition-all duration-300 hover:from-gray-200 hover:to-white">
-              <a href="/contact">
-                Book a Session
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </button>
-          </motion.div>
+          <div className="flex justify-center">
+  <Link to="/contact" className="inline-flex mt-8 relative cursor-pointer group">
+    <div className="relative px-6 py-3 bg-black border border-white/30 hover:border-white/70 transition-all duration-300">
+      {/* Button content */}
+      <div className="relative flex items-center justify-center gap-3">
+        <span className="text-base text-white tracking-wide">
+          Contact Us
+        </span>
+        <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform duration-300" />
+      </div>
+    </div>
+  </Link>
+</div>
         </div>
       </section>
     </motion.div>

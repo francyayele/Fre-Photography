@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // Correct import
 import { ArrowRight } from "lucide-react";
 
 const Photography = () => {
@@ -10,7 +11,7 @@ const Photography = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="h-screen relative"
+        className="h-[50vh] relative"
       >
         <div className="absolute inset-0">
   
@@ -29,15 +30,16 @@ const Photography = () => {
             MEMORIES
           </motion.h1>
 
-          <motion.button
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="group flex items-center space-x-2 px-8 py-3 bg-white text-black hover:bg-gray-200 transition-colors"
-          >
-            <span><a href="/contact"> Book Now</a></span>
-            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-          </motion.button>
+          <div className="flex justify-center">
+            <Link to="/contact" className="inline-flex mt-8 relative cursor-pointer group">
+              <div className="relative px-6 py-3 bg-black border border-white/30 hover:border-white/70 transition-all duration-300">
+                <div className="relative flex items-center justify-center gap-3">
+                  <span className="text-base text-white tracking-wide">Book a Session</span>
+                  <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform duration-300" />
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </motion.div>
 
