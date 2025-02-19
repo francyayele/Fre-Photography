@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Link } from "react-router-dom"; // Correct import
+import { ArrowRight, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const AboutPage = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -92,12 +93,19 @@ const AboutPage = () => {
             <p className="text-gray-600 leading-relaxed">
               My approach focuses on creating authentic, emotionally resonant images that tell your story. Whether it&apos;s a wedding, family portrait, or corporate event, I work closely with clients to understand their vision and bring it to life through carefully crafted photography.
             </p>
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              className="mt-8 px-8 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
-            >
-             <a href="/contact"> Book a Session</a>
-            </motion.button>
+            <div className="flex justify-center">
+  <Link to="/contact" className="inline-flex mt-8 relative cursor-pointer group">
+    <div className="relative px-6 py-3 bg-black border border-white/30 hover:border-white/70 transition-all duration-300">
+      {/* Button content */}
+      <div className="relative flex items-center justify-center gap-3">
+        <span className="text-base text-white tracking-wide">
+        Book a Session
+        </span>
+        <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform duration-300" />
+      </div>
+    </div>
+  </Link>
+</div>
           </motion.div>
           
           <motion.div 
@@ -107,7 +115,7 @@ const AboutPage = () => {
             className="relative h-[600px] overflow-hidden rounded-2xl"
           >
             <img
-              src="Public/images/Aboutus.jpg"
+              src="images/Fre.png"
               alt="Photographer portrait"
               className="w-full h-full object-cover"
             />
